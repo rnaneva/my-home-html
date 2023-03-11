@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
 
-    <title>All Offers</title>
+    <title>Search result</title>
     <link rel="icon" sizes="180x180" type="image/x-icon" href="/Project/images/favicon.ico">
 </head>
 
-<body >
+<body>
     <header>
         <nav class="main-nav">
             <h2 id="logo">my-ho<span class="house-logo"><img src="/Project/images/favicon.png" alt="M"></span>e</h2>
@@ -36,56 +36,15 @@
 
 
         <h3 class="section-title" id="offers-title">
-            <span class="blue">All available</span> properties.
+            <span class="blue">Search</span> results.
         </h3>
 
-        <aside class="request quick-search">
+        
+        
 
-            <h3 class="section-title" id="quick-search-title"> Quick search</h3>
-           
-            
-            <form action="/search" method="get" class="search-form">
-                <div class="form-group">
-                    <select class="s-form" id="offerType">
-                        <option value="">Offer Type</option>
-                        <option value="rent">Rent</option>
-                        <option value="buy">Buy</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select class="s-form" id="propertyCategory">
-                        <option value="">Category</option>
-                        <option value="1-bedroom">1-bedroom</option>
-                        <option value="2-bedroom">2-bedroom</option>
-                        <option value="garage">Garage</option>
-                        <option value="office">Office</option>
-                        <option value="house">House</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <select class="s-form" id="location">
-                        <option value="">Location</option>
-                        <option value="Sofia">Sofia</option>
-                        <option value="Varna">Varna</option>
-                        <option value="Bourgas">Bourgas</option>
-                        <option value="Plovdiv">Plovdiv</option>
-                    </select>
-                </div>
+        <section class="search-result">
 
-                <div id="adv-search-link">
-                    <a href="index.html#advanced-search-title">Advanced search</a>
-                </div>
-    
-                <button type="submit" class="submit-btn">Search</button>
-            </form>
-
-            
-        </aside>
-
-
-        <section class="all-offers">
-
-            <article class="offer-search ">
+            <article class="offer-search">
 
                 <div class="img">
                     <img src="/Project/images/Rainbow_app.jpg" alt="Pomorie">
@@ -99,6 +58,7 @@
                         <span class="bold">82 m2.</span>
                         <span class="floor"><i class="fa-solid fa-stairs"></i>3 from 6</span>
                         <div class="rooms">3 rooms, 1 balcony, 1 bathroom</div>  
+                        <div class="desc">Two bedroom apartment with sea view in a modern apartment complex consisting of luxury apartments in the popular resort of Sunny Beach.</div> 
                     </div>
                     <h4 class="price">58 900 €</h4>
                 
@@ -122,6 +82,7 @@
                         <span class="bold">82 m2.</span>
                         <span class="floor"><i class="fa-solid fa-stairs"></i>3 from 6</span>
                         <div class="rooms">3 rooms, 1 balcony, 1 bathroom</div>  
+                        <div class="desc">Two bedroom apartment with sea view in a modern apartment complex consisting of luxury apartments in the popular resort of Sunny Beach.</div> 
                     </div>
                     <h4 class="price">58 900 €</h4>
                 
@@ -145,6 +106,7 @@
                         <span class="bold">82 m2.</span>
                         <span class="floor"><i class="fa-solid fa-stairs"></i>3 from 6</span>
                         <div class="rooms">3 rooms, 1 balcony, 1 bathroom</div>  
+                        <div class="desc">Two bedroom apartment with sea view in a modern apartment complex consisting of luxury apartments in the popular resort of Sunny Beach.</div> 
                     </div>
                     <h4 class="price">58 900 €</h4>
                 
@@ -168,6 +130,7 @@
                         <span class="bold">82 m2.</span>
                         <span class="floor"><i class="fa-solid fa-stairs"></i>3 from 6</span>
                         <div class="rooms">3 rooms, 1 balcony, 1 bathroom</div>  
+                        <div class="desc">Two bedroom apartment with sea view in a modern apartment complex consisting of luxury apartments in the popular resort of Sunny Beach.</div> 
                     </div>
                     <h4 class="price">58 900 €</h4>
                 
@@ -180,7 +143,37 @@
         </section>
 
 
+        <section class="no-offers">
+            
+            <div class="one-row">
+                <div class="no-results-msg">No suitable offers for the search criteria</div>
+            <button class="new-search new-btn">Make a new search</button>
+            </div>
+            
+            <div class="btn">
+                <button class="new-search new-btn">Or show all offers</button>
+            </div>
+
+        </section>
+
+
+
+        <h3 class="section-title" id="notify-title">
+            <span class="blue">Notify me</span> for a new suitable property.
+        </h3>
+
+        <section class="subscribe">
+      
+            <input class="notify-text" type="email" placeholder="Enter email" name="email" id="email">
+            <button class="submit-btn" id="notify-btn">Subscribe</button>
+        </section>
+
+
+        
+
      
+
+
 
 
         <footer>
@@ -217,7 +210,6 @@
             <p id="copy-right">Copyright&copy; my-home.now 2023</p>
         </footer>
 
-        <script type="text/javascript" src="script.js"></script>
 
 
     </main>
@@ -225,8 +217,3 @@
 </body>
 
 </html>
-
-
-
-
-            

@@ -47,7 +47,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 2px;
-    margin-left: 4rem;
+    margin-left: 1rem;
     cursor: pointer;
 
 }
@@ -182,7 +182,7 @@ form {
 }
 
 
-.search-form {
+.advanced-search {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -192,7 +192,8 @@ form {
     padding: 2rem;
     align-items: center;
     border: 1px solid var(--brown-nav);
-
+    border-radius: 5px;
+    background-color: #dcdbda;
 
 }
 
@@ -207,7 +208,6 @@ form {
     height: 2.5rem;
     width: 15rem;
     color: var(--grey);
-
 }
 
 .s-form:hover {
@@ -289,7 +289,7 @@ i {
 }
 
 .latest-offers {
-    margin: 2rem 4rem;
+    margin: 2rem 4rem 6rem;
     display: flex;
     justify-content: space-between;
 
@@ -423,7 +423,7 @@ footer a {
 }
 
 
-/* all-offers */
+/* search result */
 
 
 
@@ -441,11 +441,11 @@ footer a {
 }
 
 .offer-search:not(:last-child) {
-    border-bottom: 1px solid var(--blue);
+    border-bottom: 1px solid var(--footer-bg);
 }
 
-.img {
-    width: 42%;
+.offer-search .img {
+    width: 21rem;
     margin-right: 1rem;
     cursor: pointer;
 }
@@ -677,8 +677,6 @@ input.notify-text:hover {
     margin-bottom: 1rem;
     color: #00bbec;
     margin-top: 0rem;
-
-
 }
 
 .request button {
@@ -700,7 +698,101 @@ input.notify-text:hover {
     border-radius: 5px;
 }
 
+/* all offers */
 
+
+
+
+.all-offers .img {
+    width: 12rem;
+}
+
+.all-offers {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 70%;
+
+}
+
+.quick-search{
+    position: relative;
+    top: 4rem;
+    padding: 1.5rem;
+}
+
+.quick-search {
+   padding-bottom: 1.5rem;
+}
+
+.quick-search .search-form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    align-items: center;
+    background-color: #dcdbda;
+
+}
+
+#quick-search-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+#adv-search-link{
+    padding: 0 0.5rem 0.5rem ;
+    display: block;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+/* all-agencies */
+
+.agn-logo{
+   height: 5rem;
+   margin-top: 1rem;
+}
+
+.agn-properties{
+    text-decoration: none;
+}
+
+.agn-properties:hover{
+    color: #00bbec;
+}
+
+.agn-brief{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--footer-bg);
+    background-color: #fffdfc;
+    padding: 1.2rem 2rem;
+   margin: 0;
+}
+
+.all-agencies{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 4rem;
+ 
+}
+
+.order{
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
+.order h4{
+    color: #3c3b40;
+    font-size: 1.2rem;
+}
+
+.radio-cnt{
+    display: inline-block;
+    margin-right: 1rem;
+}
 
 
 
