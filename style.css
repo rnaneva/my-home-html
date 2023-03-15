@@ -897,37 +897,151 @@ input.notify-text:hover {
 }
 
 
-
-.upload-btn {
-    padding: 0.2rem;
-    width: 6rem;
-}
-
 .upload-file-form .upload-cnt {
     margin-top: 2rem;
     text-align: center;
 }
 
-.image-input{
+
+.upload-btn {
+    padding: 0.3rem;
+    width: 6rem;
+}
+.image-input {
     width: 14rem;
 }
 
-.successful-upload{
+.successful-upload {
     display: none;
     text-align: center;
     padding: 5rem;
 }
 
-.successful-upload .message{
+.successful-upload .message {
     font-size: 1.5rem;
 }
 
-.successful-upload .waiting-conf{
+.successful-upload .waiting-conf {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-style: italic;
     color: var(--brown-dark);
 }
 
+
+/* admin-page */
+
+.offers-table {
+    margin: 3rem auto;
+    border: 1px solid var(--brown-dark);
+}
+
+.offers-table td,
+.offers-table th {
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem;
+    
+}
+
+
+.offers-table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.offers-table tr:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.offers-table .td-name{
+    width: 15rem;
+}
+
+.offers-table th{
+    background-color: #cccccc;
+}
+
+.offers-table button{
+width: 6rem;
+}
+
+.active{
+color: rgb(12, 130, 12);
+}
+
+.inactive{
+    color: #b42323;
+}
+
+.last{
+    margin-bottom:4rem;
+}
+
+.show-more{
+text-align: right;
+
+font-size: 1.2rem;
+}
+
+/* edit-offer */
+.save-changes{
+    width: 12rem;
+}
+
+
+.edit-file-form {
+    background-color: transparent;
+    margin: auto;
+    padding-bottom:2rem;
+    border: 0.5px solid var(--footer-bg);
+    background-color: #dcdbda;
+}
+
+.edit-file-form .section-title {
+    display: grid;
+
+}
+
+
+.edit-file-form .upload-cnt {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.display-img{
+    width: 10rem;
+   margin: 0 2rem;
+ }
+
+.img-table{
+   margin: 3rem auto;
+   
+}
+
+.delete-btn{
+    width: 6rem;
+    padding: 0.3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid var(--blue);
+    background-color: var(--white);
+    color: var(--grey);
+    font-family: 'Noto Serif', serif;
+    font-size: 1.1rem;
+    ;
+}
+
+.delete-btn:hover{
+    background-color: var(--blue);
+    color: var(--bg-white);
+}
+
+.img-table td{
+    background-color: #cdcac7;
+    padding: 2rem;
+    text-align: center;
+}
 
 
