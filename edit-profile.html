@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
 
-    <title>Admin page</title>
+    <title>Profile</title>
     <link rel="icon" sizes="180x180" type="image/x-icon" href="/Project/images/favicon.ico">
 </head>
 
@@ -34,41 +34,40 @@
     <main>
 
 
-
         <h3 class="section-title">
-            <span class="blue ">Address</span> Admin page.
+            <span class="red">Edit</span> profile.
         </h3>
 
-        
-                
-            </tbody>
-        </table>
 
 
+        <form action="/" method="post" class="edit-account">
+            <div class="name edit-field">
+                <label for="name" class="bold">Name</label>
+                <input class="edit-acc-field" type="text" value="Address" name="name">
+            </div>
+            <div class="address edit-field">
+                <label for="address" class="bold">Address</label>
+                <input class="edit-acc-field" type="text" value="Sofia, 12 Serdika str." name="address">
+            </div>
+            <div class="phone edit-field">
+                <label for="name" class="bold">Phone</label>
+                <input class="edit-acc-field" type="number" value="088990099" name="phone">
+            </div>
 
-        <table class="offers-table">    
-            <tbody>
-                <tr>
-                    <td class="bold">Active Offers</td>   
-                    <td><a href="">10</a></td>
-                </tr>
-                <tr>
-                    <td class="bold">Inactive Offers</td>
-                    <td><a href="">5</a></td>
-                </tr>
-                <tr>
-                    <td class="bold">New Requests</td>
-                    <td><a href="">12</a></td>
-                </tr>
-                <tr>
-                    <td class="bold">Replied Requests</td>
-                    <td><a href="">30</a></td>
-                </tr>
-            </tbody>
-        </table>
-     
-     
-        
+    
+            <div class="edit-field upload-logo">
+                <label for="logo" class="bold">Logo</label>
+                <input type="file" name="img" id="img-upload" enctype="multipart/form-data">
+                <output ><img src="/Project/images/address_agn.pic" alt=""></output>
+            </div>
+           
+
+            <div class="btn edit-btn">
+                <button class="submit-btn save-changes" type="submit">Save changes</button>
+            </div>
+
+        </form>
+
 
         <footer>
 

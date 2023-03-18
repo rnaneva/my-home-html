@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
 
-    <title>Admin page</title>
+    <title>Request Details</title>
     <link rel="icon" sizes="180x180" type="image/x-icon" href="/Project/images/favicon.ico">
 </head>
 
@@ -35,40 +35,70 @@
 
 
 
-        <h3 class="section-title">
-            <span class="blue ">Address</span> Admin page.
-        </h3>
-
-        
-                
-            </tbody>
-        </table>
+        <h4 class="section-title">
+            <span class="blue ">Request</span> Details.
+        </h4>
 
 
 
-        <table class="offers-table">    
-            <tbody>
-                <tr>
-                    <td class="bold">Active Offers</td>   
-                    <td><a href="">10</a></td>
-                </tr>
-                <tr>
-                    <td class="bold">Inactive Offers</td>
-                    <td><a href="">5</a></td>
-                </tr>
-                <tr>
-                    <td class="bold">New Requests</td>
-                    <td><a href="">12</a></td>
-                </tr>
-                <tr>
-                    <td class="bold">Replied Requests</td>
-                    <td><a href="">30</a></td>
-                </tr>
-            </tbody>
-        </table>
-     
-     
-        
+        <form class="request-form" action="/" method="post">
+            <table class="request-table">
+
+                <tbody>
+
+                    <tr >
+                        <td class="bold margin-right">Offer Id</td>
+                        <td>31176</td>
+                    </tr>
+                    <tr >
+                        <td class="bold margin-right">Offer Name</td>
+                        <td><a href="">2-bedroom apartment in Sunny Beach</a></td>
+                    </tr>
+                    <tr >
+                        <td class="bold margin-right">Received on</td>
+                        <td>20-11-2022</td>
+                    </tr>
+                    <tr >
+                        <td class="bold margin-right">Client Name</td>
+                        <td>Ivan Ivanov</td>
+                    </tr>
+                    <tr >
+                        <td class="bold">Email</td>
+                        <td>ivan@mail.bg</td>
+                    </tr>
+                    <tr >
+                        <td class="bold margin-right">Phone</td>
+                        <td>0899899899</td>
+                    </tr>
+
+                    <tr class="rqst-info">
+                        <td class="bold margin-right">Message</td>
+                        <td>I am interested to buy this apartment.</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+            <div class="notes">
+                <textarea name="notes" id="notes" rows="5" placeholder="Notes"></textarea>
+            </div>
+
+            <div class="status">
+                <label class="bold blue" for="status">Status</label>
+                <select class="edit-acc-field" id="status-select">
+                    <option class="status-field" value="new">New</option>
+                    <option class="status-field" value="inspection">Inspection</option>
+                    <option class="status-field" value="replied">Replied</option>
+                    <option class="status-field" value="reject">Reject</option>
+                </select>
+
+            </div>
+
+
+            <button class="new-btn rqst-btn">Save</button>
+        </form>
+
 
         <footer>
 
@@ -101,7 +131,7 @@
             </section>
 
 
-            <p id="copy-right">&copy;Copyright my-home.now 2023</p>
+            <p id="copy-right">Copyright&copy; my-home.now 2023</p>
         </footer>
 
 
