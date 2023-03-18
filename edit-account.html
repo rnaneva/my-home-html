@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
 
-    <title>Edit offer</title>
+    <title>Edit Account</title>
     <link rel="icon" sizes="180x180" type="image/x-icon" href="/Project/images/favicon.ico">
 </head>
 
-<body class="add-offer">
+<body>
     <header>
         <nav class="main-nav">
             <h2 id="logo">my-ho<span class="house-logo"><img src="/Project/images/favicon.png" alt="M"></span>e</h2>
@@ -33,58 +33,54 @@
 
     <main>
 
-        <form class="edit-file-form" action="" method="post">
-            <label class="section-title" for="img-upload">
-                <h4><span class="red">Upload</span> more images.</h4>
-            </label>
-            <p class="info">Up to 15 images total.</p>
-            <div class="upload-cnt">
-                <input class="image-input" type="file" multiple="multiple" 
-                name="img" id="img-upload" enctype="multipart/form-data">
-                <output></output>
-                <button type="submit" class="new-btn upload-btn" id="upload-btn"
-                accept="image/*">Upload</button>
+
+        <h3 class="section-title">
+            <span class="red">Edit</span> account.
+        </h3>
+
+
+
+        <form action="/" method="post" class="edit-account">
+            <div class="name edit-field">
+                <label for="name" class="bold">Name</label>
+                <input class="edit-acc-field" type="text" value="Address" name="name">
+            </div>
+            <div class="address edit-field">
+                <label for="address" class="bold">Address</label>
+                <input class="edit-acc-field" type="text" value="Sofia, 12 Serdika str." name="address">
+            </div>
+            <div class="phone edit-field">
+                <label for="name" class="bold">Phone</label>
+                <input class="edit-acc-field" type="number" value="088990099" name="phone">
+            </div>
+            <div class="edit-field upload-logo">
+                <label for="logo" class="bold">Logo</label>
+                <input type="file" name="img" id="img-upload" enctype="multipart/form-data">
+                <output ><img src="/Project/images/address_agn.pic" alt=""></output>
+            </div>
+            <div class="status">
+                <label class="bold" for="status">Status</label>
+                <select class="edit-acc-field" id="status-select">
+                    <option class="status-field" value="active">Active</option>
+                    <option class="status-field"value="inactive">Inactive</option>
+                </select>
+            </div>
+
+            <div class="btn edit-btn">
+                <button class="submit-btn save-changes" type="submit">Save changes</button>
             </div>
 
         </form>
 
-        <div class="edit-file-form" action="" method="post">
-                <h4 class="section-title">Current images.</h4>
-            
-                <table class="img-table"> 
-                    <tbody>
-                        <tr>
-                            <td><img class="display-img" src="/Project/images/Rainbow_1.jpg" alt=""></td>
-                            <td><button class="delete-btn">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="display-img" src="/Project/images/Rainbow_1.jpg" alt=""></td>
-                            <td><button class="delete-btn">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="display-img" src="/Project/images/Rainbow_1.jpg" alt=""></td>
-                            <td><button class="delete-btn">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="display-img" src="/Project/images/Rainbow_1.jpg" alt=""></td>
-                            <td><button class="delete-btn">Delete</button></td>
-                        </tr>
-                        <tr>
-                            <td><img class="display-img" src="/Project/images/Rainbow_1.jpg" alt=""></td>
-                            <td><button class="delete-btn">Delete</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            
-        </div>
 
 
 
 
-        <div class="successful-upload">
-           <p class="message"> 7 images have been uploaded successfuly.</p>
-           <p class="waiting-conf">The offer is under review. You will be informed by email when published.</p>
-        </div>
+
+
+
+
+
 
         <footer>
 
@@ -117,14 +113,13 @@
             </section>
 
 
-            <p id="copy-right">Copyright&copy; my-home.now 2023</p>
+            <p id="copy-right">&copy;Copyright my-home.now 2023</p>
         </footer>
 
-        <script type="text/javascript" src="script2.js"></script>
- 
+
+
     </main>
 
 </body>
-
 
 </html>
