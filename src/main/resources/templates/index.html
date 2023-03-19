@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
+
+    <title>my-hoMe</title>
+    <link rel="icon" sizes="180x180" type="image/x-icon" href="/Project/images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <h2 id="logo">my-ho<span class="house-logo"><img src="/Project/images/favicon.png" alt="M"></span>e</h2>
+            <ul class="list">
+                <li class="list-element"><a class="element-text" href="">Login</a></li>
+                <li class="list-element"><a class="element-text" href="">Register</a></li>
+                <li class="list-element"><a class="element-text" href="">Add offer</a></li>
+                <li class="list-element"><a class="element-text" href="">Edit offer</a></li>
+                <li class="list-element"><a class="element-text" href="">Logout</a></li>
+
+                <li class="list-element"><a class="element-text" href="">Offers</a></li>
+                <li class="list-element"><a class="element-text" href="">Agencies</a></li>
+                <li class="list-element"><a class="element-text" href="">Contacts</a></li>
+              
+            </ul>
+        </nav>
+        <section id="main-title">
+            <h1>All available homes at one place.</h1>
+            <hr class="horisontal-line">
+            <h2>To rent or buy.</h2>
+            <hr class="horisontal-line">
+        </section>
+    </header>
+
+    <main>
+        <section id="search-img">
+            <img src="/Project/images/house.png" alt="">
+        </section>
+       
+        <h3 class="section-title" id="advanced-search-title">Find a nice place to live.</h3>
+       
+        <form action="/" method="get" class="advanced-search" id="advanced-search">
+            <div class="form-group">
+                <select class="s-form" id="offerType">
+                    <option value="">Offer Type</option>
+                    <option value="rent">Rent</option>
+                    <option value="buy">Buy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="s-form" id="propertyCategory">
+                    <option value="">Category</option>
+                    <option value="1-bedroom">1-bedroom</option>
+                    <option value="2-bedroom">2-bedroom</option>
+                    <option value="garage">Garage</option>
+                    <option value="office">Office</option>
+                    <option value="house">House</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="s-form" id="location">
+                    <option value="">Location</option>
+                    <option value="Sofia">Sofia</option>
+                    <option value="Varna">Varna</option>
+                    <option value="Bourgas">Bourgas</option>
+                    <option value="Plovdiv">Plovdiv</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input class="s-form" type="number" name="maxPrice" id="maxPrice" placeholder="Max. price">
+            </div>
+            <div class="form-group">
+                <input class="s-form" type="number" name="minArea" id="minArea" placeholder="Min. area">
+            </div>
+            <div class="form-group">
+                <select class="s-form" id="construction">
+                    <option class="" value="">Construction
+                    </option>
+                    <option value="brick">Brick</option>
+                    <option value="LFW">LFW</option>
+                    <option value="panel">Panel</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="s-form" id="heating">
+                    <option value="">Heating</option>
+                    <option value="gas">Gas</option>
+                    <option value="TPP">TPP</option>
+                    <option value="Electricity">Electicity</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="s-form" id="agencyg">
+                    <option value="">Agency</option>
+                    <option value="adress">Address</option>
+                    <option value="avangard">Avangarde</option>
+                    <option value="yavlena">Yavlena</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="s-form" id="orderBy" >
+                    <option value="">Sort By</option>
+                    <option value="price">Price</option>
+                    <option value="date">Date</option>
+                    <option value="date">Rating</option>
+                </select>
+            </div>
+            <div class="result hide">
+                <span id="results">108</span>
+                results
+            </div>
+            <div class="btn">
+                <button class="submit-btn" type="submit">Search</button>
+            </div>
+        </form>
+        <h3 class="section-title">Last added offers.</h3>
+       
+        <section class="latest-offers">
+            <article class="offer-brief">
+
+                <img src="/Project/images/Pomorie_app.jpg" alt="Pomorie">
+                <h3>58 900 €</h3>
+                <div class="text">
+                    <span class="space">82 m2.</span>
+                    <span><i class="fa-solid fa-stairs"></i>3 from 6</span>
+                    <div>3 rooms, 1 balcony, 1 bathroom</div>
+                    <div><i class="fa-sharp fa-solid fa-location-dot"></i>Pomorie, Flora Beach Resort</div>
+                </div>
+                <button class="br-off-btn">More details</button>
+            </article>
+      
+            <article class="offer-brief">
+                <img src="/Project/images/Pomorie_app.jpg" alt="Pomorie">
+                <h3>58 900 €</h3>
+                <div class="text">
+                    <span class="space">82 m2.</span>
+                    <span><i class="fa-solid fa-stairs"></i>3 from 6</span>
+                    <div>3 rooms, 1 balcony, 1 bathroom</div>
+                    <div><i class="fa-sharp fa-solid fa-location-dot"></i>Pomorie, Flora Beach Resort</div>
+                </div>
+                <button class="br-off-btn">More details</button>
+            </article>
+     
+            <article class="offer-brief">
+                <img src="/Project/images/Pomorie_app.jpg" alt="Pomorie">
+                <h3>58 900 €</h3>
+                <div class="text">
+                    <span class="space">82 m2.</span>
+                    <span><i class="fa-solid fa-stairs"></i>3 from 6</span>
+                    <div>3 rooms, 1 balcony, 1 bathroom</div>
+                    <div><i class="fa-sharp fa-solid fa-location-dot"></i>Pomorie, Flora Beach Resort</div>
+                </div>
+                <button class="br-off-btn">More details</button>
+            </article>
+        
+            <article class="offer-brief">
+                <img src="/Project/images/Pomorie_app.jpg" alt="Pomorie">
+                <h3>58 900 €</h3>
+                <div class="text">
+                    <span class="space">82 m2.</span>
+                    <span><i class="fa-solid fa-stairs"></i>3 from 6</span>
+                    <div>3 rooms, 1 balcony, 1 bathroom</div>
+                    <div><i class="fa-sharp fa-solid fa-location-dot"></i>Pomorie, Flora Beach Resort</div>
+                </div>
+                <button class="br-off-btn">More details</button>
+            </article>
+  
+        </section>
+
+        <footer>
+
+            <h2 id="logo">my-home.now</h2>
+
+            <section>
+                <article>
+                    <address><i class="fa-sharp fa-solid fa-location-dot"></i>Sofia 1000, 12 Serdika, ground floor
+                    </address>
+                    <p> <i class="fa-solid fa-phone"></i>+359 885 00 00 11</p>
+                    <p><i class="fa-solid fa-envelope"></i><a href="">office@my-home.now</a></p>
+                </article>
+
+                <article>
+                    <h4 date time>WORKING HOURS</h4>
+                    <p><i>Monday to Friday:</i>10 AM to 9 PM</p>
+                    <p><i>Saturday and Sunday:</i> Closed </p>
+                </article>
+
+                <article class="center">
+                    <h4>CONNECT WITH US</h4>
+                    <div class="icons"><a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-viber"></i></a>
+                    </div>
+                </article>
+            </section>
+
+
+            <p id="copy-right">Copyright&copy; my-home.now 2023</p>
+        </footer>
+
+
+    </main>
+
+</body>
+
+</html>
